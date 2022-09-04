@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Minisplit ON/OFF",
+        "price": 200,
+        "thumbnail": "https://cdn2.iconfinder.com/data/icons/ventilation-1/500/yul950_36_wall_air_conditioner_bottom_icon_outline_vector-512.png",
+        "id": 1
+    },
+    {
+        "title": "Split Cassette",
+        "price": 1000,
+        "thumbnail": "https://cdn3.iconfinder.com/data/icons/196-car-supplies-and-parts-for-repair-outline/64/car_fan_radiator_cooling_service_system_air_conditioner_cold-512.png",
+        "id": 2
+    },
+        {
+        "title": "Air Handler Unit",
+        "price": 1200,
+        "thumbnail": "https://cdn0.iconfinder.com/data/icons/energy-11/512/air_conditioner-512.png",
+        "id": 3
+    }
+]
