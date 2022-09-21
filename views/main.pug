@@ -1,0 +1,28 @@
+extends ./index
+
+block main
+    div(class="container mt-3 jumbotron")
+        h3(class="text-primary") Ingresa un Nuevo Producto:
+        br
+        form(action="/productos" method="post")
+            div(class="form-group")
+                label(for="title" class="font-weight-bold") Título:
+                input(type="text" name="title" class="form-control")
+            div(class="form-group")
+                label(for="price" class="font-weight-bold") Precio:
+                input(type="number" name="price" class="form-control")
+            div(class="form-group")
+                label(for="thumbnail" class="font-weight-bold") Imagen:
+                input(type="url" name="thumbnail" class="form-control")    
+            input(type="submit" value="Enviar" class="btn btn-success mt-3 mb-5")
+
+        h3(class="text-primary") Productos Existentes:
+        div(style="display: flex; flex-wrap: wrap; padding: 25px; background-color:rgb(27, 85, 245)")
+            each product in products
+                div()
+                    h3(style=" font-family: Georgia; text-align: center; font-size:large; color:whitesmoke")!= product.title
+                    div(style="height: 250px; width: 250px; margin-right: 20px; margin-left: 20px;")
+                        img(src!= product.thumbnail, alt!= product.id, style="width: 100%; min-height: 100%; max-height: 100%; border-radius: 25px; background-color: whitesmoke")                    
+                    h4(style=" font-family: Roboto; text-align: center; font-size:medium; color:whitesmoke; margin-top: 5px; margin-bottom: 15px")= `Precio ${product.price} usd`
+
+    
