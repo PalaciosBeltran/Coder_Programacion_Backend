@@ -23,16 +23,6 @@ app.engine('hbs', engine({
   partialsDir: path.resolve(__dirname, './views/partials/')
 }));
 
-// app.engine(
-//   "hbs",
-//   handlebars({
-//     extname: ".hbs",
-//     defaultLayout: 'index.hbs',
-//     layoutsDir: __dirname + "/views/layouts",
-//     partialsDir: __dirname + '/views/partials/'
-//   })
-// );
-
 // Routes
 app.use('/api' , apiRoutes);
 
