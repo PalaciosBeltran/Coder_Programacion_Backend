@@ -1,0 +1,12 @@
+<h3 class="text-primary"> Productos Existentes:</h3>
+<div style="display: flex; flex-wrap: wrap; padding: 25px; background-color:rgb(27, 85, 245)">
+    <% products.forEach(product => { %>
+    <div>
+        <h3 style=" font-family: Georgia; text-align: center; font-size:large; color:whitesmoke"><%=product.title%></h3>
+        <div style="height: 250px; width: 250px; margin-right: 20px; margin-left: 20px;">
+            <img src= <%= product.thumbnail %> alt= <%= product.id %> style="width: 100%; min-height: 100%; max-height: 100%; border-radius: 25px; background-color: whitesmoke">            
+        </div>
+        <h4 style=" font-family: Roboto; text-align: center; font-size:medium; color:whitesmoke; margin-top: 5px; margin-bottom: 15px">Precio: <%=product.price%> usd</h4>            
+    </div>
+    <% }); %>
+</div>
